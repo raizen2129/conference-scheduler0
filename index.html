@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Scheduler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>📅 Meeting Scheduler</h1>
+</header>
+
+<div class="container">
+
+    <div class="form-section">
+        <h2>Schedule Meeting</h2>
+
+        <form id="meetingForm">
+            <input type="text" id="title" placeholder="Meeting Title" required>
+
+            <input type="date" id="date" required>
+
+            <input type="time" id="time" required>
+
+            <input type="text" id="participants" placeholder="Participants">
+
+            <textarea id="description" placeholder="Description"></textarea>
+
+            <button type="submit">Add Meeting</button>
+        </form>
+    </div>
+
+
+    <div class="calendar-section">
+        <h2>Calendar</h2>
+
+        <div class="calendar-header">
+            <button id="prevMonth">◀</button>
+            <h3 id="monthYear"></h3>
+            <button id="nextMonth">▶</button>
+        </div>
+
+        <div id="calendar"></div>
+
+    </div>
+
+
+    <div class="meeting-list">
+        <h2>Scheduled Meetings</h2>
+        <ul id="meetingList"></ul>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
