@@ -1,3 +1,19 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-app.js";
+import { getFirestore } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBU4YQ-IW_B7CCuSJVP_oSnqE1qvp2C67w",
+  authDomain: "jacconferencescheduler.firebaseapp.com",
+  projectId: "jacconferencescheduler",
+  storageBucket: "jacconferencescheduler.firebasestorage.app",
+  messagingSenderId: "941527706839",
+  appId: "1:941527706839:web:066a72c30eb6d6bd1dd492",
+  measurementId: "G-VSY40Y0QCY"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
 const form = document.getElementById("meetingForm");
 const meetingList = document.getElementById("meetingList");
 const calendar = document.getElementById("calendar");
